@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSendEmailVerification } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
-import auth from '../../firebase.init';
+import auth from '../firebase.init';
 
 const EmailVerification = () => {
     const [sendEmailVerification] = useSendEmailVerification(auth);
@@ -13,7 +13,7 @@ const EmailVerification = () => {
                 className='btn btn-success rounded-0 my-4'
                 onClick={async () => {
                     await sendEmailVerification();
-                    toast('Sent email !! Please Check Your email');
+                    toast('Please Check Your email');
                 }}
             >
                 Send Email verification again

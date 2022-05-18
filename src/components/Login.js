@@ -1,10 +1,8 @@
-import axios from 'axios';
 import React, { useRef } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import auth from '../../firebase.init';
-import login from '../../images/login.png';
+import auth from '../firebase.init';
 import Loading from './Loading';
 
 const Login = () => {
@@ -56,7 +54,6 @@ const Login = () => {
         <div className='min-h-screen'>
             <div className='container  mx-auto w-3/4 md:w-1/2 lg:w-2/6 py-5 px-4 md:p-5 bg-emerald-200'>
                 <div className='text-center mx-auto'>
-                    <img className='img-fluid rounded-circle mx-auto w-3/5 md:w-2/6' src={login} alt="" />
                     <h1 className='text-2xl font-semibold'>Login form</h1>
                 </div>
                 <form className='mt-5 mb-3' onSubmit={handleSubmit}>
