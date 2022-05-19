@@ -52,9 +52,9 @@ const Login = () => {
     }
     return (
         <div className='min-h-screen'>
-            <div className='container  mx-auto w-3/4 md:w-1/2 lg:w-2/6 py-5 px-4 md:p-5 bg-emerald-200'>
+            <div className='container  mx-auto w-3/4 md:w-1/2 lg:w-2/6 py-5 px-4 md:p-5 bg-emerald-50'>
                 <div className='text-center mx-auto'>
-                    <h1 className='text-2xl font-semibold'>Login form</h1>
+                    <h1 className='text-2xl font-bold'>Login form</h1>
                 </div>
                 <form className='mt-5 mb-3' onSubmit={handleSubmit}>
                     <div className="mb-3">
@@ -64,7 +64,7 @@ const Login = () => {
                         <input ref={passwordRef} type="password" className="form-control" id="exampleInputPassword1" placeholder='Password' />
                     </div>
                     <h1 className='my-3'>{errorElement}</h1>
-                    <button className="btn bg-rose-600 font-semibold text-xl text-white rounded-0 w-full">Login</button>
+                    <button className="btn bg-orange-600 font-semibold text-xl text-white rounded-0 w-full">Login</button>
                 </form>
                 <div className='d-flex justify-between'>
                     <p className='me-2'>Not a Member ? <span onClick={() => navigate('/register')} className='text-primary cursor-pointer font-semibold'>Register</span></p>

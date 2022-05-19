@@ -45,7 +45,7 @@ const Register = () => {
 
     return (
         <div className='bg-image min-h-screen'>
-            <div className='container mx-auto w-3/4 md:w-1/2 lg:w-2/6 py-5 px-4 bg-emerald-200'>
+            <div className='container mx-auto w-3/4 md:w-1/2 lg:w-2/6 py-5 px-4 bg-emerald-50'>
                 <h1 className='text-2xl text-center mb-4 mt-5 font-semibold'>Please Register</h1>
                 <form className='my-3' onSubmit={handleRegister}>
                     <div className="mb-3">
@@ -65,7 +65,7 @@ const Register = () => {
                         <label className="form-check-label" htmfor="exampleCheck1">Accepts the all terms and conditions.</label>
                     </div>
                     {errorMessage}
-                    <button disabled={!terms} className="btn bg-purple-800 font-semibold text-xl text-white rounded-0 w-full">Register</button>
+                    <button disabled={!terms} className="btn bg-cyan-500 font-semibold text-xl text-dark rounded-0 w-full">Register</button>
                 </form>
                 <p>Already Member ? <span onClick={() => navigate('/login')} className='text-primary cursor-pointer font-semibold'>Please Login</span></p>
             </div>

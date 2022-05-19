@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container max-w-6xl">
-                <a className="navbar-brand" href="#"><span className='font-bold text-4xl text-violet-900'>To<span className='text-rose-600'>Do</span></span></a>
+                <Link to='/' className="navbar-brand" href="#"><span className='font-bold text-4xl text-violet-900'>T<span className='text-lime-500'>O</span><span className='text-rose-600'>D<span className='text-cyan-600'>O</span></span></span></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
