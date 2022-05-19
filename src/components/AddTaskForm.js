@@ -13,14 +13,12 @@ const AddTaskForm = () => {
         <div className='max-w-sm mx-auto my-10'>
             <form onSubmit={handleTask}>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">Task Name</label>
-                    <input name='name' type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                    <input name='name' type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Task Name' />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">Task Description</label>
-                    <input name='description' type="text" className="form-control" id="exampleInputPassword1" />
+                    <textarea name='description' type="text" className="form-control" id="exampleInputPassword1" placeholder='Task Description' rows='2'></textarea>
                 </div>
-                <button className="btn btn-primary">Add Task</button>
+                <button className="btn btn-dark w-full">Add Task</button>
             </form>
         </div>
     );
